@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/favicon.ico"> <!--El favicon-->
+        <title>Italianno's</title>
+
+        <!--Para el slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <header> <!--Encabezado-->
+            <div>
+                <a href="Inicio.html">
+                    <img src="img/Logo.png" width="200" title="Logo" style="display: block; margin: auto;">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contáctanos</a></li>
+                </ul>
+
+                <!-- Aquí mostraremos la fecha y hora actual -->
+                <p id="fechaHora"></p>
+
+            </nav>
+        </header>
+        
+        <section class="contenedor"><!--Cuerpo principal de la página-->
+            <div class="nosotros"> <!--html correspondiendte al formulario con javascript integrado-->
+                <form action="" class="" id="formularioContacto" name="">
+
+                    <article class="contenedor-imagen-texto">
+                        
+                        <div class="img_alumnos">
+                                <img src="img/Fernando.jpg" width="150" title="Persona">
+                        </div>
+                        <div class="texto">
+                            <h2>Fernando Ríos González</h2>
+                            <br>
+                            <p> Me considero una persona bastante amigable, responsable, chistosa, amable, y me gusta mucho 
+                                ayudar a los demás. Disfruto mucho escuchar música, practicar deportes como futbol y voleibol, y 
+                                jugar videojuegos. Tengo un encanto por los gatos, puedo confirmar que son mi animal favorito. 
+                                Me gusta mucho la comida italiana, en especial la pizza, y disfruto mucho cocinar.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contenedor-imagen-texto">
+                        
+                        <div class="img_alumnos">
+                                <img src="img/Alberto.jpg" width="150" title="Persona">
+                        </div>
+                        <div class="texto">
+                            <h2>Alberto Josué Rendón Chinchilla</h2>
+                            <br>
+                            <p> Yo me considero una persona bien tranquila y llevadera. Valoro mucho la honestidad, empatía, y paciencia, 
+                                y siempre busco ver lo mejor en cada persona. Me gusta mucho el arte, en especial la música: me acompaña 
+                                en todo aspecto de mi vida, desde mis responsabilidades hasta mis hobbies. En cuanto a comida, considero 
+                                que la italiana es de mis gastronomías favoritas: el gelato es mi estilo favorito de helado, y los ravioles 
+                                me fascinan.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contenedor-imagen-texto">
+                        
+                        <div class="img_alumnos">
+                                <img src="img/Jesus.jpg" width="150" title="Persona">
+                        </div>
+                        <div class="texto">
+                            <h2>Juan Jesús Orihuela Torres</h2>
+                            <br>
+                            <p> Estudiante, hijo y amigo. Me considero una persona tranquila, trabajadora y justa. Disfruto programar, 
+                                escuchar mpusica y el deporte, como el futbol y el tenis. Para mí es muy importante tener un impacto
+                                positivo con aquellos que aprecio. En cuestión de comida, disfruto mucho la italiana, en especial la
+                                Pasta Alfredo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="contenedor-imagen-texto">
+                        
+                        <div class="img_alumnos">
+                                <img src="img/Diego.jpg" width="150" title="Persona">
+                        </div>
+                        <div class="texto">
+                            <h2>Diego Coglievina Díaz</h2>
+                            <br>
+                            <p> Me defino como una persona equilibrada, dedicado a mis estudios, mi familia y mis amigos. Soy alguien 
+                                calmado, con una pasión por aprender cosas nuevas. En mi tiempo libre, disfruto de el flamenco y estar 
+                                con personas. Me motiva poder generar un impacto positivo en las personas que me importan. La comida 
+                                italiana siempre ha sido mi favorita, especialmente la lasagna.
+                            </p>
+                        </div>
+                    </article>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <span class="footer-text">Italianno's Copyright 2024 | Todos los Derechos Reservados</span>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Regresar arriba">↑</button>
+        </footer>
+        <script src="js/interactions.js"></script>
+    </body>
+</html>

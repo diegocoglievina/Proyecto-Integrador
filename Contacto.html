@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/favicon.ico"> <!--El favicon-->
+        <title>Italianno's</title>
+
+        <!--Para el slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <header> <!--Encabezado-->
+            <div>
+                <a href="Inicio.html">
+                    <img src="img/Logo.png" width="200" title="Logo" style="display: block; margin: auto;">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contáctanos</a></li>
+                </ul>
+
+                <!-- Aquí mostraremos la fecha y hora actual -->
+                <p id="fechaHora"></p>
+
+            </nav>
+        </header>
+
+        <section class="contenedor"><!--Cuerpo principal de la página-->
+            <div class="formatoFormulario"> <!--html correspondiendte al formulario con javascript integrado-->
+                <form action="" class="formularioContacto" id="formularioContacto" name="formularioContacto">
+                    <h3>¡Contáctanos!</h3>
+                    <div class="contenedor-inputs">
+                        <input type="text" name="Nombre" placeholder="Nombre">
+                        <input type="text" name="Apellido" placeholder="Apellido">
+                        <input type="text" name="NúmeroCelular" placeholder="Número de Celular">
+                        <input type="email" name="CorreoElectrónico" placeholder="Correo Electrónico">
+                        <input type="text" name="Mensaje" placeholder="Tu Mensaje">
+    
+                        <div class="tipo">
+                            <input type="radio" name="Tipo" id="cliente" value="cliente">
+                            <label for="cliente" class="label-radio cliente">Cliente</label>
+                            
+                            <input type="radio" name="Tipo" id="proveedor" value="proveedor">
+                            <label for="proveedor" class="label-radio proveedor">Proveedor</label>
+                        </div>
+    
+                        <div class="termino">
+                            <input type="checkbox" name="Terminos" id="Terminos">
+                            <label for="Terminos">Acepto los Términos & Condiciones de Italianno's</label>
+                        </div>
+                        <ul class="error" id="error"></ul>
+                    </div>
+    
+                    <input type="submit" class="btn" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <span class="footer-text">Italianno's Copyright 2024 | Todos los Derechos Reservados</span>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Regresar arriba">↑</button>
+        </footer>
+        <script src="js/interactions.js"></script>
+    </body>
+</html>

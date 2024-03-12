@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/favicon.ico"> <!--El favicon-->
+        <title>Italianno's</title>
+
+        <!--Para el slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    </head>
+    <body>
+        <header> <!--Encabezado-->
+            <div>
+                <a href="Inicio.html">
+                    <img src="img/Logo.png" width="200" title="Logo" style="display: block; margin: auto;">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contáctanos</a></li>
+                </ul>
+
+                <!-- Aquí mostraremos la fecha y hora actual -->
+                <p id="fechaHora"></p>
+
+            </nav>
+        </header>
+
+        <!--Agregamos el Slider al body-->
+        <section class="contenedorSlider">
+            <form id="formularioContacto">
+                <div class="slider">
+                    <div id="img"> <img src="img/1.png"> </div>
+                    <div id="img"> <img src="img/2.png"> </div>
+                    <div id="img"> <img src="img/3.png"> </div>
+                    <div id="img"> <img src="img/4.png"> </div>
+                    <div id="img"> <img src="img/5.png"> </div>
+                </div>
+        </form>
+        </section>
+
+        <section class="contenedor"><!--Cuerpo principal de la página-->
+            <section class="main">
+                <article>
+                    <h2>¿Quienes somos?</h2>
+                    <br>
+                    <p>En Italianno's, nos enorgullece compartir la auténtica cocina italiana en un ambiente acogedor. Desde hace décadas, 
+                        hemos perfeccionado nuestras recetas familiares utilizando ingredientes frescos de la más alta calidad. 
+                        Nuestro compromiso va más allá de servir deliciosos platos; nos esforzamos por crear momentos memorables para nuestros clientes, 
+                        ofreciendo un servicio excepcional en cada visita.</p>
+                </article>
+                <article>
+                    <h2>¡Te lo llevamos hasta tu casa!</h2>
+                    <br>
+                    <div class="img_delivery">
+                        <a href="https://www.ubereats.com" target="_blank">
+                            <img src="img/UberEats.jpg" width="150" title="UberEats">
+                        </a>
+                        <a href="https://www.rappi.com" target="_blank">
+                            <img src="img/Rappi.jpg" width="150" title="Rappi">
+                        </a>
+                        <a href="https://www.didi-food.com/es-MX/food/" target="_blank">
+                            <img src="img/Didi.jpg" width="150" title="Didi">
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <h2>¡Síguenos en nuestras Redes Sociales!</h2>
+                    <br>
+                    <p>
+                        Mantente al tanto de nuestras promociones, eventos y novedades.
+                        <br>
+                        Comparte tus momentos en Italianno's con nosotros utilizando el hashtag #Italianno's.
+                        <br>
+                        <br>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <br>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                        <br>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    </p>
+                </article>
+                
+            </section>
+            <aside>
+                <h3>Horarios</h3>
+                <p>
+                    <br>
+                    Lunes a Viernes:
+                    <br>
+                    Almuerzo: 12:00 PM - 3:00 PM
+                    <br>
+                    Cena: 6:00 PM - 10:00 PM
+                    <br>
+                    <br>
+                    Sábado y Domingo:
+                    <br>
+                    Almuerzo: 12:00 PM - 4:00 PM
+                    <br>
+                    Cena: 5:00 PM - 10:00 PM
+                    <br>
+                    <br>
+                    Xentric, 76269 Zibatá, Qro.
+                </p>
+                
+                <br>
+                <section class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29861.92883892197!2d-100.
+                    35136782071352!3d20.68010927726877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3
+                    5c1cebe1b891%3A0x93c0abf54cd38ef2!2s76269%20Zibat%C3%A1%2C%20Qro.!5e0!3m2!1sen!2smx!4v17099
+                    28648313!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </aside>
+        </section>
+        <footer>
+            <span class="footer-text">Italianno's Copyright 2024 | Todos los Derechos Reservados</span>
+            <button onclick="scrollToTop()" id="btnScrollToTop" title="Regresar arriba">↑</button>
+        </footer>
+        <script src="js/interactions.js"></script>
+    </body>
+</html>

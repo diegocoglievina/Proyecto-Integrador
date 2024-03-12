@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica ; /*Font general de todo el Cuerpo*/
+}
+
+header, .contenedor, footer, .contenedorSlider { /*Ajuste tamaños y posiciones de todos los elementos*/
+    width: 90%; 
+    max-width: 1000px;
+    margin: 20px auto; /*"auto" alinea todos los elementos al centro de la página*/
+}
+
+body h1, body h2, body h3 {
+    font-family: 'Helvetica', sans-serif;
+    font: bold;
+}
+
+header {
+    /*Agregar transparencia a la imagen*/
+    background: url(img/Header.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2); /* Añade transparencia a la imagen de fondo */
+}
+
+header div h1 { 
+    padding-left: 20px; /*para que comience un poco más centrado respecto a la imagen
+                          el titulo de la página (TECH-TOP)*/
+}
+
+header nav { /*Ajustes generales de la barra de navegación*/
+    background: #014C40; /*Color de la barra*/
+    overflow: hidden; /*Ocultar cualquier contenido que se salga de la caja*/
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none; /*eliminamos los elementos automáticos de una lista (separadores de punto)*/
+}
+
+header nav ul li {
+    float: left; /*Alineamos los botones de la barra de navegación a la izquierda*/
+}
+
+header nav ul li a { /*Damos propiedades/cualidades al texto de los botones*/
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover { /*Configuramos el efecto que tiene poner el mouse sobre los botones*/
+    background: #ffffff;
+    color: #000000;
+}
+
+header nav p {
+    float: right;
+    padding: 10px;
+    color:#fff;
+}
+
+.contenedor .main { /*Ajustamos el espacio cubierto por los elementos del "main"*/
+    width: 58.5%;
+    margin-right: 1.5%;
+    float: left; /*Ubicamos las cajas moradas a la izquierda da la página*/
+}
+
+.contenedor .main article{ /*Le damos propiedes de relleno, espaciado, color, etc. a los
+                             contenidos del "main"*/
+    padding: 20px;
+    background: #014C40;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+    color: #fff;
+}
+
+.contenedor h3{ /*Cambiamos el tamaño de la letra de los encabezados "h3"*/
+    font-size: 20px;
+}
+
+.contenedor .main article p a { /*Cambiamos las propiedades de la liga*/
+    text-decoration: none;
+    color: #E23837;
+}
+
+.contenedor .nosotros { /*Ajustamos el espacio cubierto por los elementos del "main"*/
+    width: 100%;
+    margin-right: 1.5%;
+}
+
+.contenedor .nosotros article{ /*Le damos propiedes de relleno, espaciado, color, etc. a los
+                             contenidos del "main"*/
+    padding: 20px;
+    background: #014C40;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: justify;
+    color: #fff;
+}
+
+
+.contenedor-imagen-texto {
+    display: flex; /* Esto hace que los elementos hijos se alineen en línea */
+    align-items: center; /* Alinea verticalmente los elementos hijos al inicio */
+}
+
+.img_alumnos {
+    display: flex; /* Alinea las imágenes en vertical */
+    flex-direction: column; /* Establece la dirección de las imágenes en vertical */
+    margin-right: 20px; /* Añade un margen a la derecha de las imágenes para separarlas del texto */
+}
+
+.texto {
+    flex-grow: 1; /* Hace que el texto ocupe todo el espacio disponible a la derecha de las imágenes */
+}
+
+
+/* Estilo para el contenedor de las imágenes */
+.img_delivery {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.img_delivery img {
+    margin: 10px; /* Añade un margen alrededor de cada imagen */
+}
+
+aside{ /*Damos propiedades a la "Sidebar"*/
+    width: 40%;
+    background: #014C40;
+    color: #fff;
+    float: left; /*Ubicamos el sidebar pegado a la izquierda, despues de las cajas moradas*/
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 20px;
+    box-sizing: border-box; /*Consideramos los elementos del Sidebar como
+                              estar encapsulados por una caja, permitiendo 
+                              que se ubiquen al lado, en lugar de abajo de
+                              las otras secciones de texto*/
+    text-align: justify;
+}
+
+/*Para ajustar el tamaño del mapa*/
+aside iframe {
+    width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor aside */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    border: none; /* Elimina el borde del iframe */
+}
+
+
+footer { /*Damos propiedades al pie de página*/
+    background: #014C40;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    display: flex; /* Utiliza flexbox para controlar la alineación vertical */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+/* Estilo para el botón del footer */
+#btnScrollToTop {
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    line-height: 50px; /* Ajusta la línea de texto para centrar el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 5px; /* Añade un borde redondeado para suavizar las esquinas */
+    background-color: #7A2937; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 24px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el botón del footer cuando se pasa el cursor sobre él */
+#btnScrollToTop:hover {
+    background-color: #b04859; /* Color de fondo azul oscuro cuando se pasa el cursor */
+}
+
+/*Formulario CSS*/
+* { /*Establecemos propiedades generales para todo el codigo que sigue*/
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+.formatoFormulario {
+    margin: 0px;
+    background: #014C40;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.formularioContacto .contenedor-inputs{
+    padding: 10px;
+    background: #014C40;
+}
+
+.formularioContacto input[type="text"],
+.formularioContacto input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Helvetica 27px', serif;
+    font-size: 18px;
+}
+
+.formularioContacto input[type="text"]:focus,
+.formularioContacto input[type="email"]:focus {
+    border-bottom: 2px solid #014C40;
+}
+
+.formularioContacto input[type="radio"]{
+    display: none;
+}
+
+.formularioContacto .tipo {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.formularioContacto .tipo .label-radio {
+    width: 49.5%;
+}
+
+.formularioContacto .tipo .cliente {
+    border-radius: 3px 0 0 3px;
+}
+
+.formularioContacto .tipo .proveedor {
+    border-radius: 0 3px  3px 0;
+}
+
+.formularioContacto .label-radio {
+    background: #7A2937;
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.formularioContacto input[type="radio"]:checked + .label-radio{
+    background: #CFA559;
+    color: #fff;
+}
+
+
+.formularioContacto .terminos {
+    text-align: center;
+    color: #424242;
+}
+
+.formularioContacto .terminos label {
+    margin-left: 10px;
+}
+
+.formularioContacto .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #E23837;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.formularioContacto .btn {
+    width: 100%;
+    text-align: center;
+    background: #CFA559;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 6px 6px 6px 6px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.formularioContacto .btn:hover {
+    background: #7A2937;
+}
+
+.formularioContacto h3 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
